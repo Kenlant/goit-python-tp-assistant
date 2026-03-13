@@ -67,14 +67,21 @@ goit-python-tp-assistant/
    venv\Scripts\activate         # Windows
    ```
 
-3. Install dependencies:
+3. Install the package in editable mode:
    ```bash
-   pip install -r requirements.txt
+   pip install -e .
    ```
+   This installs all dependencies and registers the `assistant` CLI command. Changes to the source code take effect immediately without reinstalling.
 
 ## Usage
 
-Run the application:
+After installation, run the app from anywhere using:
+
+```bash
+assistant
+```
+
+Or run it directly without installing:
 
 ```bash
 python main.py
