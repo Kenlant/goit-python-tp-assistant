@@ -58,9 +58,9 @@ def add(prev, notepad: Notepad):
     record = Note(text)
     update_tags(record)
 
-    notepad.add_note(record)
 
     if (promt_yes_no("Save note?")):
+        notepad.add_note(record)
         notepad.save_data()
 
     prev()

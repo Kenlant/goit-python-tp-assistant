@@ -68,9 +68,9 @@ def add(prev, contacts_book: ContactsBook):
     update_email(record)
     update_phone(record)
 
-    contacts_book.add_record(record)
 
     if (promt_yes_no("Save record?")):
+        contacts_book.add_record(record)
         contacts_book.save_data()
 
     prev()
